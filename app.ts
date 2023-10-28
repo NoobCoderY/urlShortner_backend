@@ -21,7 +21,7 @@ const app = express();
 
  app.use(cors({
     credentials: true,
-    origin:"http://localhost:3000",
+    origin:["http://localhost:3000","https://url-shortner-frontend-9fa2.vercel.app/","*"],
   }))
   app.use(express.json());
   app.use(express.urlencoded({
